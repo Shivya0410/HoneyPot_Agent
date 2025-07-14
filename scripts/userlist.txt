@@ -1,0 +1,6 @@
+root
+admin
+ubuntu
+user
+test
+guest
