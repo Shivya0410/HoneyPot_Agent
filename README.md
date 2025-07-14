@@ -1,6 +1,6 @@
- SSH Honeypot AI Agent System — Full Setup & Explanation
+##SSH Honeypot AI Agent System — Full Setup & Explanation
 
-What You're Building
+#What You're Building
 A complete AI-powered honeypot system using:
 SSH Honeypot — Python + Paramiko to simulate an SSH server
 
@@ -18,7 +18,7 @@ Core ML (optional) — Detect anomalous behavior in logs
 
 
 
-Project Structure
+#Project Structure
 bash
 CopyEdit
 honeypot_agent/
@@ -38,7 +38,7 @@ honeypot_agent/
 └── userlist.txt, passlist.txt
 
 
-SETUP — COPY & PASTE
+#SETUP — COPY & PASTE
 1. Clone & install
 bash
 CopyEdit
@@ -71,7 +71,7 @@ def check_channel_request(self, kind, chanid):
     return OPEN_SUCCEEDED if kind == 'session' else OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
 
 
-RUNNING THE SYSTEM
+#RUNNING THE SYSTEM
 4. Start everything
 bash
 CopyEdit
@@ -107,7 +107,7 @@ curl -X POST http://127.0.0.1:8000/alert \
   -d '{"message":"Test alert"}'
 
 
-GPT CANVAS — How It Works
+#GPT CANVAS — How It Works
 pgsql
 CopyEdit
 User
@@ -125,7 +125,7 @@ Spammer triggers AUTH & CMD entries
 Analyzer summarizes logs / Alert sends email
 
 
-CODE EXPLANATION (BEGINNER → ADVANCED)
+#CODE EXPLANATION (BEGINNER → ADVANCED)
 server/ssh_honeypot.py
 Uses Paramiko to simulate an SSH server
 
