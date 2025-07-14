@@ -126,7 +126,7 @@ Analyzer summarizes logs / Alert sends email
 
 
 ## CODE EXPLANATION (BEGINNER → ADVANCED)
-server/ssh_honeypot.py
+### server/ssh_honeypot.py
 Uses Paramiko to simulate an SSH server
 
 
@@ -140,7 +140,7 @@ Uses ServerInterface and Transport to handle SSH sessions
 
 
 
-agents/*.py
+### agents/*.py
 Each file is a LangChain-powered tool:
 
 
@@ -157,7 +157,7 @@ Uses Tool, initialize_agent, OpenAI, and AgentType.ZERO_SHOT_REACT_DESCRIPTION
 
 
 
-main.py
+### main.py
 FastAPI app that exposes the above tools over HTTP endpoints
 
 
@@ -168,7 +168,7 @@ Runs with uvicorn main:app --reload
 
 
 
-scripts/spam_ssh.py
+### scripts/spam_ssh.py
 Uses Paramiko to run fake brute-force attacks
 
 
